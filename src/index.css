@@ -1,13 +1,115 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.field {
+    margin: 0 auto;
+    padding-left: 30px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.field .inputContainer {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.field .inputContainer input {
+    margin-right: 20px;
+    border: 2px solid rgb(195, 0, 255);
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 7px;
+    font-family: "Segoe UI";
+    font-size: 1rem;
+
+    transition: 0.4s ease-in-out;
+}
+
+.field .inputContainer input:focus {
+    background-color: rgb(211, 242, 255);
+    border: 2px solid pink;
+}
+
+.field > button {
+    align-self: center;
+    background-color: rgb(255, 189, 223);
+    border: 2px solid rgb(0, 179, 255);
+    padding: 6px 15px;
+    font-family: "Segoe UI";
+    font-size: 1rem;
+    border-radius: 10px;
+
+    transition: 0.5s ease-in-out;
+}
+
+.field > button:hover {
+    background-color: #71d4ff;
+    border: 2px solid rgb(255, 83, 172);
+    cursor: pointer;
+}
+
+.field .listData {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.field .listData .datas {
+    background-color: white;
+    box-shadow: 0px 0px 4px rgba(0, 174, 255, 0.35);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 15px 15px 15px 20px;
+    transition: 0.4s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.field .listData .datas:hover {
+    box-shadow: 0px 0px 4px rgba(255, 0, 140, 0.35);
+}
+
+.listData .datas span, .datas label {
+    display: block;
+    margin-bottom: 7px;
+    padding: 3px 0 3px;
+}
+
+.listData input {
+    border: 1px solid #989898;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    padding: 3px 6px;
+    transition: 0.3s ease-in-out;
+}
+
+.listData input:focus {
+    border: 1px solid skyblue;
+}
+
+.listData button {
+    border: 2px solid skyblue;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+
+    transition: 0.4s ease-in-out;
+}
+
+.listData button:hover {
+    cursor: pointer;
+    background-color: lightpink;
 }
